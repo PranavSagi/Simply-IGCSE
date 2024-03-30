@@ -2,56 +2,122 @@
 <html lang="en">
 <head>
 <style>
- 
-
- 
+  #subjects {
+   background-image: url('book.jpg'); /* Add background image to the subjects section */
+   background-size: cover; /* Ensure the image covers the entire section */
+   background-position: center; /* Center the image within the section */
+   background-repeat: no-repeat; /* Prevent the image from repeating */
+   /* ... (other styles for #subjects) */
+  }
+ </style>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>IGCSE Tutoring</title>
+ <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"> <!-- Link to Animate.css -->
+ <style>
   /* Additional Styles for Index Page */
   header {
-    background-color: #007bff;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   background-color: #007bff;
+   color: #fff;
+   padding: 20px 0;
+   text-align: center;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
-  /* ... (other styles remain the same) */
-</style>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>IGCSE Tutoring</title>
-  <link rel="stylesheet" href="styles.css"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"> </head>
+  nav {
+   background-color: #fff;
+   padding: 10px 0;
+   text-align: center;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  nav a {
+   text-decoration: none;
+   color: #333;
+   margin: 0 20px;
+   transition: all 0.3s ease-in-out;
+  }
+  nav a:hover {
+   color: #007bff;
+  }
+  section {
+   padding: 50px 20px;
+   text-align: center;
+  }
+  section h2 {
+   font-size: 2.5em;
+   margin-bottom: 30px;
+   color: #007bff;
+  }
+  section p {
+   font-size: 1.1em;
+   margin-bottom: 20px;
+  }
+  .btn {
+   display: inline-block;
+   padding: 10px 20px;
+   font-size: 1.1em;
+   background-color: #007bff;
+   color: #fff;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: all 0.3s ease-in-out;
+   text-decoration: none;
+  }
+  .btn:hover {
+   background-color: #0056b3;
+  }
+  footer {
+   background-color: #007bff;
+   color: #fff;
+   text-align: center;
+   padding: 20px 0;
+   position: fixed;
+   bottom: 0;
+   width: 100%;
+   box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  }
+  footer p {
+   font-size: 0.9em;
+  }
+ </style>
+</head>
 <body style="font-family:Arial">
-  <header class="animate__animated animate__fadeInDown">
-    <h1>IGCSE Tutoring</h1>
-  </header>
-  <nav>
-    <a href="#about">Home</a> <a href="subjects.html">Subjects</a> <a href="#contact">Contact</a> 
-  </nav>
-  <section id="about" class="animate__animated animate__fadeInUp">
-    <h2>About Us</h2>
-    <p>Welcome to <strong>IGCSE Tutoring</strong>! We specialize in helping students excel in their IGCSE exams through personalized tutoring sessions.</p>
-    <p>Our experienced tutors are dedicated to providing tailored support to meet the individual needs of each student.</p>
-    <a href="subjects.html" class="btn">Explore Subjects</a> </section>
+ <header class="animate__animated animate__fadeInDown">
+  <h1>IGCSE Tutoring</h1>
+ </header>
+ <nav>
+  <a href="#about">Home</a> <!-- Updated link to scroll to the about section -->
+   <a href="subjects.html">Subjects</a> <!-- Updated link to scroll to the subjects section -->
+  <a href="#contact">Contact</a> </nav>
+ <section id="about" class="animate__animated animate__fadeInUp">
+  <h2>About Us</h2>
+  <p>Welcome to <strong>IGCSE Tutoring</strong>! We specialize in helping students excel in their IGCSE exams through personalized tutoring sessions.</p>
+  <p>Our experienced tutors are dedicated to providing tailored support to meet the individual needs of each student.</p>
+  <a href="subjects.html" class="btn">Explore Subjects</a> <!-- Updated to link to subjects.html -->
+ </section>
 
-  <section id="subjects" class="animate__animated animate__fadeInUp">
-    <h2 style="color:green;">Subjects</h2>
-    <font=69px>
-    <ul style="list-style: none; padding: 0; margin-top: 20px; color: white; size:69" >
-      <li id="mathematics"><strong>Mathematics</strong></li>
-      <li id="physics"><strong>Physics</strong></li>
-      <li id="chemistry"><strong>Chemistry</strong></li>
-      <li id="biology"><strong>Biology</strong></li>
-      <li id="english_language"><strong>English Language</strong></li>
-      <li id="ict"><strong>ICT (Information and Communication Technology)</strong></li>
-    </ul>
-    </font>
-  </section>
+<section id="subjects" class="animate__animated animate__fadeInUp">
+ <h2 style="color:green;">Subjects</h2>
+ <font=69px>
+ <ul style="list-style: none; padding: 0; margin-top: 20px; color: white; size:69" >
+  <li id="mathematics"><strong>Mathematics</strong></li>
+  <li id="physics"><strong>Physics</strong></li>
+  <li id="chemistry"><strong>Chemistry</strong></li>
+  <li id="biology"><strong>Biology</strong></li>
+  <li id="english_language"><strong>English Language</strong></li>
+  <li id="ict"><strong>ICT (Information and Communication Technology)</strong></li>
+ </ul>
+ </font>
+</section>
 
-  <section id="contact" class="animate__animated animate__fadeInUp">
-    <h2>Contact Us</h2>
-    <p>Have questions or need assistance? Contact us via email at <strong>info@igcsetutoring.com</strong> or fill out the form below:</p>
-    </section>
-  <footer>
-    <p>&copy; 2024 IGCSE Tutoring. All rights reserved.</p>
-  </footer>
+ <section id="contact" class="animate__animated animate__fadeInUp">
+  <h2>Contact Us</h2>
+  <p>Have questions or need assistance? Contact us via email at <strong>info@igcsetutoring.com</strong> or fill out the form below:</p>
+  <!-- Add contact form here -->
+ </section>
+ <footer>
+  <p>&copy; 2024 IGCSE Tutoring. All rights reserved.</p>
+ </footer>
 </body>
 </html>
